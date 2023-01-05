@@ -30,10 +30,14 @@
 		<link rel="stylesheet" type="text/css" href="../../css/eventos/eventos.css">
 		<script>
 
+			/*var btn1 = document.getElementById("btn-ano");
+			var btn2 = document.getElementById("btn-ano2");*/
+
 			function Mudarestado2023(id) {
 		           document.getElementById(id).style.display = 'block';
 		           document.getElementById('minhaDiv2022').style.display = 'none';
-		         
+		           document.getElementById("btn-ano").classList.add("active");
+		           document.getElementById("btn-ano2").classList.remove("active");
 		        
 
 		      
@@ -42,10 +46,12 @@
 		    	function Mudarestado2022(id) {
 		            document.getElementById(id).style.display = 'block';
 		  			document.getElementById('minhaDiv2023').style.display = 'none';
-
+		  			document.getElementById("btn-ano").classList.remove("active");
+		            document.getElementById("btn-ano2").classList.add("active");
 		   
 			}
 
+			
 
 
 		</script>
@@ -116,10 +122,10 @@
 			  <div class="card-header">
 			    <ul class="nav nav-tabs card-header-tabs">
 			      <li class="nav-item">
-			        <button type="button active" onclick="Mudarestado2023('minhaDiv2023')">2023</button>
+			        <button class="ano btn active " id="btn-ano" type="button active" onclick="Mudarestado2023('minhaDiv2023')">2023</button>
 			      </li>
-			      <li class="nav-item">
-			    <button type="button" onclick="Mudarestado2022('minhaDiv2022')">2022</button>
+			      <li class="nav-item ">
+			    <button class="ano btn " id="btn-ano2" type="button" onclick="Mudarestado2022('minhaDiv2022')">2022</button>
 			      </li>
 			    </ul>
 			  </div>	
