@@ -28,6 +28,27 @@
 		<link rel="stylesheet" type="text/css" href="../../fonts/fonts.css">
 		<link rel="stylesheet" type="text/css" href="../../css/navbar.css">
 		<link rel="stylesheet" type="text/css" href="../../css/eventos/eventos.css">
+		<script>
+
+			function Mudarestado2023(id) {
+		           document.getElementById(id).style.display = 'block';
+		           document.getElementById('minhaDiv2022').style.display = 'none';
+		         
+		        
+
+		      
+		    }
+
+		    	function Mudarestado2022(id) {
+		            document.getElementById(id).style.display = 'block';
+		  			document.getElementById('minhaDiv2023').style.display = 'none';
+
+		   
+			}
+
+
+
+		</script>
 
 		<title>THUNDERBOTS - EVENTOS</title>
 	</head>
@@ -95,139 +116,268 @@
 			  <div class="card-header">
 			    <ul class="nav nav-tabs card-header-tabs">
 			      <li class="nav-item">
-			        <a class="nav-link active" aria-current="true" href="#">2022</a>
+			        <button type="button active" onclick="Mudarestado2023('minhaDiv2023')">2023</button>
 			      </li>
 			      <li class="nav-item">
-			        <a class="nav-link disabled">2023</a>
+			    <button type="button" onclick="Mudarestado2022('minhaDiv2022')">2022</button>
 			      </li>
 			    </ul>
-			  </div>
+			  </div>	
 
-			  <!-- card principal - inicio -->
-			  <div class="container-xl">
-			  	<div class="card-body" >
-			  		<!-- carousel card principal -->
-				    <div class="container-fluid d-flex justify-content-center">
-			    	 	<div class="card mb-3">
-			    	 		<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-							  <div class="carousel-inner">
-							    <div class="carousel-item active">
-							      <img src="../../images/imagem-trabalho.png" class="d-block w-100" alt="...">
-							    </div>
-							    <div class="carousel-item">
-							      <img src="../../images/imagem-trabalho.png" class="d-block w-100" alt="...">
-							    </div>
-							    <div class="carousel-item">
-							      <img src="../../images/imagem-trabalho.png" class="d-block w-100" alt="...">
-							    </div>
+
+			  <div id ="minhaDiv2023">
+				  <!-- card principal - inicio -->
+					  <div class="container-xl">
+					  	<div class="card-body" >
+					  		<!-- carousel card principal -->
+						    <div class="container-fluid d-flex justify-content-center">
+					    	 	<div class="card mb-3">
+					    	 		<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+									  <div class="carousel-inner">
+									    <div class="carousel-item active">
+									      <img src="../../images/imagem-trabalho.png" class="d-block w-100" alt="...">
+									    </div>
+									    <div class="carousel-item">
+									      <img src="../../images/imagem-trabalho.png" class="d-block w-100" alt="...">
+									    </div>
+									    <div class="carousel-item">
+									      <img src="../../images/imagem-trabalho.png" class="d-block w-100" alt="...">
+									    </div>
+									  </div>
+									  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+									    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+									    <span class="visually-hidden">Previous</span>
+									  </button>
+									  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+									    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+									    <span class="visually-hidden">Next</span>
+									  </button>
+									</div>
+
+									<!-- corpo do card principal -->
+								  <div class="card-body">
+								    <h5 class="card-title fs-3 text-start ">2023</h5>
+								    <p class="card-text fs-6 text-start text-opacity-75">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et justo odio. Vestibulum feugiat, erat quis luctus mattis, quam urna pellentesq</p>
+								    <p class="card-text text-start"><small class="text-muted ">Last updated 3 mins ago - 05/10/2022</small></p>
+								  </div>	
+								</div>
+						    </div>
+					  	</div>
+					  </div>
+					  <!-- card principal - fim -->
+					  <div class="container-xl d-flex justify-content-center align-items-baseline flex-wrap">
+
+
+					  	<div class="card card-secundario mx-2 my-2">
+						  <img src="../../images/imagem-trabalho.png" class="card-img-top" alt="...">
+						  <div class="card-body">
+
+						  	<h5 class="card-title fs-3 text-start">Card title</h5>
+						  	<p class="text-start">
+							  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
+							    Expandir <i class="bi bi-box-arrow-down"></i>
+							  </button>
+							</p>
+							<div class="collapse" id="collapseExample1">
+							  <div class="card card-body">
+							    	<p class="card-text fs-6 text-start text-opacity-75">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et justo odio. Vestibulum feugiat, erat quis luctus mattis, quam urna pellentesq</p>
+								    <p class="card-text text-start"><small class="text-muted ">Last updated 3 mins ago - 05/10/2022</small></p>
 							  </div>
-							  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-							    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-							    <span class="visually-hidden">Previous</span>
-							  </button>
-							  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-							    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-							    <span class="visually-hidden">Next</span>
-							  </button>
 							</div>
 
-							<!-- corpo do card principal -->
-						  <div class="card-body">
-						    <h5 class="card-title fs-3 text-start ">Título do card</h5>
-						    <p class="card-text fs-6 text-start text-opacity-75">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et justo odio. Vestibulum feugiat, erat quis luctus mattis, quam urna pellentesq</p>
-						    <p class="card-text text-start"><small class="text-muted ">Last updated 3 mins ago - 05/10/2022</small></p>
-						  </div>	
+						  </div>
 						</div>
-				    </div>
-			  	</div>
-			  </div>
-			  <!-- card principal - fim -->
-			  <div class="container-xl d-flex justify-content-center align-items-baseline flex-wrap">
+
+						<div class="card card-secundario mx-2 my-2">
+						  <img src="../../images/imagem-trabalho.png" class="card-img-top" alt="...">
+						  <div class="card-body">
+
+						  	<h5 class="card-title fs-3 text-start">Card title</h5>
+						  	<p class="text-start">
+							  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+							    Expandir <i class="bi bi-box-arrow-down"></i>
+							  </button>
+							</p>
+							<div class="collapse" id="collapseExample2">
+							  <div class="card card-body">
+							    	<p class="card-text fs-6 text-start text-opacity-75">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et justo odio. Vestibulum feugiat, erat quis luctus mattis, quam urna pellentesq</p>
+								    <p class="card-text text-start"><small class="text-muted ">Last updated 3 mins ago - 05/10/2022</small></p>
+							  </div>
+							</div>
+
+						  </div>
+						</div>
+
+						<div class="card card-secundario mx-2 my-2">
+						  <img src="../../images/imagem-trabalho.png" class="card-img-top" alt="...">
+						  <div class="card-body">
+
+						  	<h5 class="card-title fs-3 text-start">Card title</h5>
+						  	<p class="text-start">
+							  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
+							    Expandir <i class="bi bi-box-arrow-down"></i>
+							  </button>
+							</p>
+							<div class="collapse" id="collapseExample3">
+							  <div class="card card-body">
+							    	<p class="card-text fs-6 text-start text-opacity-75">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et justo odio. Vestibulum feugiat, erat quis luctus mattis, quam urna pellentesq</p>
+								    <p class="card-text text-start"><small class="text-muted ">Last updated 3 mins ago - 05/10/2022</small></p>
+							  </div>
+							</div>
+
+						  </div>
+						</div>
 
 
-			  	<div class="card card-secundario mx-2 my-2">
-				  <img src="../../images/imagem-trabalho.png" class="card-img-top" alt="...">
-				  <div class="card-body">
+						<div class="card card-secundario mx-2 my-2">
+						  <img src="../../images/imagem-trabalho.png" class="card-img-top" alt="...">
+						  <div class="card-body">
 
-				  	<h5 class="card-title fs-3 text-start">Card title</h5>
-				  	<p class="text-start">
-					  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
-					    Expandir <i class="bi bi-box-arrow-down"></i>
-					  </button>
-					</p>
-					<div class="collapse" id="collapseExample1">
-					  <div class="card card-body">
-					    	<p class="card-text fs-6 text-start text-opacity-75">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et justo odio. Vestibulum feugiat, erat quis luctus mattis, quam urna pellentesq</p>
-						    <p class="card-text text-start"><small class="text-muted ">Last updated 3 mins ago - 05/10/2022</small></p>
-					  </div>
-					</div>
+						  	<h5 class="card-title fs-3 text-start">Card title</h5>
+						  	<p class="text-start">
+							  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample4">
+							    Expandir <i class="bi bi-box-arrow-down"></i>
+							  </button>
+							</p>
+							<div class="collapse" id="collapseExample4">
+							  <div class="card card-body">
+							    	<p class="card-text fs-6 text-start text-opacity-75">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et justo odio. Vestibulum feugiat, erat quis luctus mattis, quam urna pellentesq</p>
+								    <p class="card-text text-start"><small class="text-muted ">Last updated 3 mins ago - 05/10/2022</small></p>
+							  </div>
+							</div>
 
-				  </div>
+						  </div>
+						</div>
+
 				</div>
+			</div>
 
-				<div class="card card-secundario mx-2 my-2">
-				  <img src="../../images/imagem-trabalho.png" class="card-img-top" alt="...">
-				  <div class="card-body">
 
-				  	<h5 class="card-title fs-3 text-start">Card title</h5>
-				  	<p class="text-start">
-					  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
-					    Expandir <i class="bi bi-box-arrow-down"></i>
-					  </button>
-					</p>
-					<div class="collapse" id="collapseExample2">
-					  <div class="card card-body">
-					    	<p class="card-text fs-6 text-start text-opacity-75">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et justo odio. Vestibulum feugiat, erat quis luctus mattis, quam urna pellentesq</p>
-						    <p class="card-text text-start"><small class="text-muted ">Last updated 3 mins ago - 05/10/2022</small></p>
+			  <div id ="minhaDiv2022">
+				  <!-- card principal - inicio -->
+					  <div class="container-xl">
+					  	<div class="card-body" >
+					  		<!-- carousel card principal -->
+						    <div class="container-fluid d-flex justify-content-center">
+					    	 	<div class="card mb-3">
+					    	 		<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+									  <div class="carousel-inner">
+									    <div class="carousel-item active">
+									      <img src="../../images/imagem-trabalho.png" class="d-block w-100" alt="...">
+									    </div>
+									    <div class="carousel-item">
+									      <img src="../../images/imagem-trabalho.png" class="d-block w-100" alt="...">
+									    </div>
+									    <div class="carousel-item">
+									      <img src="../../images/imagem-trabalho.png" class="d-block w-100" alt="...">
+									    </div>
+									  </div>
+									  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+									    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+									    <span class="visually-hidden">Previous</span>
+									  </button>
+									  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+									    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+									    <span class="visually-hidden">Next</span>
+									  </button>
+									</div>
+
+									<!-- corpo do card principal -->
+								  <div class="card-body">
+								    <h5 class="card-title fs-3 text-start ">Título do card</h5>
+								    <p class="card-text fs-6 text-start text-opacity-75">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et justo odio. Vestibulum feugiat, erat quis luctus mattis, quam urna pellentesq</p>
+								    <p class="card-text text-start"><small class="text-muted ">Last updated 3 mins ago - 05/10/2022</small></p>
+								  </div>	
+								</div>
+						    </div>
+					  	</div>
 					  </div>
-					</div>
+					  <!-- card principal - fim -->
+					  <div class="container-xl d-flex justify-content-center align-items-baseline flex-wrap">
 
-				  </div>
+
+					  	<div class="card card-secundario mx-2 my-2">
+						  <img src="../../images/imagem-trabalho.png" class="card-img-top" alt="...">
+						  <div class="card-body">
+
+						  	<h5 class="card-title fs-3 text-start">Card title</h5>
+						  	<p class="text-start">
+							  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
+							    Expandir <i class="bi bi-box-arrow-down"></i>
+							  </button>
+							</p>
+							<div class="collapse" id="collapseExample1">
+							  <div class="card card-body">
+							    	<p class="card-text fs-6 text-start text-opacity-75">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et justo odio. Vestibulum feugiat, erat quis luctus mattis, quam urna pellentesq</p>
+								    <p class="card-text text-start"><small class="text-muted ">Last updated 3 mins ago - 05/10/2022</small></p>
+							  </div>
+							</div>
+
+						  </div>
+						</div>
+
+						<div class="card card-secundario mx-2 my-2">
+						  <img src="../../images/imagem-trabalho.png" class="card-img-top" alt="...">
+						  <div class="card-body">
+
+						  	<h5 class="card-title fs-3 text-start">Card title</h5>
+						  	<p class="text-start">
+							  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+							    Expandir <i class="bi bi-box-arrow-down"></i>
+							  </button>
+							</p>
+							<div class="collapse" id="collapseExample2">
+							  <div class="card card-body">
+							    	<p class="card-text fs-6 text-start text-opacity-75">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et justo odio. Vestibulum feugiat, erat quis luctus mattis, quam urna pellentesq</p>
+								    <p class="card-text text-start"><small class="text-muted ">Last updated 3 mins ago - 05/10/2022</small></p>
+							  </div>
+							</div>
+
+						  </div>
+						</div>
+
+						<div class="card card-secundario mx-2 my-2">
+						  <img src="../../images/imagem-trabalho.png" class="card-img-top" alt="...">
+						  <div class="card-body">
+
+						  	<h5 class="card-title fs-3 text-start">Card title</h5>
+						  	<p class="text-start">
+							  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
+							    Expandir <i class="bi bi-box-arrow-down"></i>
+							  </button>
+							</p>
+							<div class="collapse" id="collapseExample3">
+							  <div class="card card-body">
+							    	<p class="card-text fs-6 text-start text-opacity-75">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et justo odio. Vestibulum feugiat, erat quis luctus mattis, quam urna pellentesq</p>
+								    <p class="card-text text-start"><small class="text-muted ">Last updated 3 mins ago - 05/10/2022</small></p>
+							  </div>
+							</div>
+
+						  </div>
+						</div>
+
+
+						<div class="card card-secundario mx-2 my-2">
+						  <img src="../../images/imagem-trabalho.png" class="card-img-top" alt="...">
+						  <div class="card-body">
+
+						  	<h5 class="card-title fs-3 text-start">Card title</h5>
+						  	<p class="text-start">
+							  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample4">
+							    Expandir <i class="bi bi-box-arrow-down"></i>
+							  </button>
+							</p>
+							<div class="collapse" id="collapseExample4">
+							  <div class="card card-body">
+							    	<p class="card-text fs-6 text-start text-opacity-75">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et justo odio. Vestibulum feugiat, erat quis luctus mattis, quam urna pellentesq</p>
+								    <p class="card-text text-start"><small class="text-muted ">Last updated 3 mins ago - 05/10/2022</small></p>
+							  </div>
+							</div>
+
+						  </div>
+						</div>
+
 				</div>
-
-				<div class="card card-secundario mx-2 my-2">
-				  <img src="../../images/imagem-trabalho.png" class="card-img-top" alt="...">
-				  <div class="card-body">
-
-				  	<h5 class="card-title fs-3 text-start">Card title</h5>
-				  	<p class="text-start">
-					  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
-					    Expandir <i class="bi bi-box-arrow-down"></i>
-					  </button>
-					</p>
-					<div class="collapse" id="collapseExample3">
-					  <div class="card card-body">
-					    	<p class="card-text fs-6 text-start text-opacity-75">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et justo odio. Vestibulum feugiat, erat quis luctus mattis, quam urna pellentesq</p>
-						    <p class="card-text text-start"><small class="text-muted ">Last updated 3 mins ago - 05/10/2022</small></p>
-					  </div>
-					</div>
-
-				  </div>
-				</div>
-
-
-				<div class="card card-secundario mx-2 my-2">
-				  <img src="../../images/imagem-trabalho.png" class="card-img-top" alt="...">
-				  <div class="card-body">
-
-				  	<h5 class="card-title fs-3 text-start">Card title</h5>
-				  	<p class="text-start">
-					  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample4">
-					    Expandir <i class="bi bi-box-arrow-down"></i>
-					  </button>
-					</p>
-					<div class="collapse" id="collapseExample4">
-					  <div class="card card-body">
-					    	<p class="card-text fs-6 text-start text-opacity-75">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et justo odio. Vestibulum feugiat, erat quis luctus mattis, quam urna pellentesq</p>
-						    <p class="card-text text-start"><small class="text-muted ">Last updated 3 mins ago - 05/10/2022</small></p>
-					  </div>
-					</div>
-
-				  </div>
-				</div>
-
-
-
 
 
 			  </div>
